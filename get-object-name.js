@@ -1,4 +1,4 @@
 const getObjectName = (object) => {
-  return object['name'];
+  return object.name;
 };
 module.exports = getObjectName;
