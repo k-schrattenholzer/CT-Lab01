@@ -5,10 +5,11 @@ describe('copyAndPush', () => {
     
   it('should take in an array, and return a copy of that array with a given item added to the end of that array', () => {
 
-    const originalArr = ['treats', 'tuna loin', 'bugs', 'naps'];
+    const arr = ['miss vanjie', 'hair-ties', 'my big pink bed', 'snuggles (but not too much)'];
 
-    const newItem = 'hair-ties';
+    const newItem = 'watching cat-tv out the window';
 
-    expect(copyAndPush(originalArr, newItem)).toEqual(expect.arrayContaining('hair-ties'));  
+    expect(copyAndPush(arr, newItem))
+      .toEqual(expect.arrayContaining([newItem]));  
   }); 
 });
