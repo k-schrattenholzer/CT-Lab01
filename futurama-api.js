@@ -5,7 +5,6 @@ const getQuote = async () => {
 
   const body = await res.json();
 
-  console.log(body);
   const singleQuote = body[Math.ceil((Math.random() * 20) + 1)];
 
   const mungedRes = {
