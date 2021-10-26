@@ -1,8 +1,8 @@
 const capitalizeAndFilter = (arr) => {
   const newArr = [];
-  arr.forEach (item => {
-    newArr.push(item.toUpperCase());
+  arr.forEach(string => {
+    newArr.push(string.toUpperCase());
   });
-  return newArr;
+  return newArr.filter(string => !string.startsWith('F'));
 };
 module.exports = capitalizeAndFilter;
